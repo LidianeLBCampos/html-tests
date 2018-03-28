@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        input, label {display: block;}
+        #reset, #send{display: inline;}
+        
+        
+    </style>
+</head>
+<body>
+   <form action="procesar-incidencia.jsp" method="post">
+        <fieldset>
+            <legend>Dados de la Incidencia:</legend>
+            <label for="user">Usuario:</label>
+            <input id = "user"type="text" size="20">
+            <label for="dpto">Departamento:</label>
+            <select id="dpto" size="3">
+               <option value="Compras">Compras</option>
+               <option value="Ventas">Ventas</option>
+               <option value="Producción">Producción</option>
+            </select>
+
+            <label for="txtarea">Descripición</label>
+            <textarea id="txtarea" cols="40" rows="3"></textarea>
+            <label for="pwd">Contraseña</label>
+            <input id="pwd" type="password" size="20"> 
+        </fieldset>
+        <fieldset>
+            <legend>Botones de reset y envío</legend>
+            <input type="submit" id="reset" value="Resetear"> 
+            <input type="submit" id="send" value="Enviar">
+        </fieldset>
+ </form>
+    
+</body>
+</html>

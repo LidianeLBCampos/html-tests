@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Situar imagenes con CSS</title>
+    <style>
+        img.border{
+            border: 1px solid #ccc;
+        }
+        img.peque {
+            width: 100px;
+            height: 100px;
+        }
+            
+        img.izquierda {
+            float:left;
+            margin-right: 15px;
+        }
+        
+        img.derecha{
+            float: right;
+            margin-left: 10px;
+        }
+        
+        img.centrada{
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .clear{
+            clear:both;
+        }
+        
+        p.centrado{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  <h1>Situar imagenes con CSS</h1>
+  <h2>Imagene situada a la izquierda</h2>
+   <img class="border peque izquierda" src="rosa_peque.png" alt="rosa peq">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam laudantium quo veritatis alias dolorem et ab officia sunt odit. Consequatur hic fuga, iure inventore praesentium alias officiis aperiam animi reprehenderit.</p>
+   <h2 class="clear">Imagen situada a la derecha</h2>
+   <img class="borde peque derecha" src="rosa_peque.png" alt="rosa peq">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex soluta voluptates libero sunt quas facilis consequatur ipsum hic obcaecati nisi, vitae rem repellat, temporibus tempora maiores omnis perferendis iusto necessitatibus.</p>
+   <h2 class="clear">Imganen Centrada</h2>
+   <img class="border peque centrada" src="rosa_peque.png" alt="rosa peuqe">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque reiciendis laborum a aperiam libero, necessitatibus molestiae non rem modi similique sed, mollitia, quis labore debitis veritatis beatae magni. Neque, quis.</p>
+   <h2>Imagen y texto centrados</h2>
+   <img class="border peque centrada"src="rosa_peque.png" alt="rosa peque">
+   <p class="centrado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, doloribus, tempora neque sint natus cupiditate repudiandae amet esse dolorum alias fugiat quisquam ea. Et, corporis ipsa nam eligendi cum repellendus?</p>
+    
+</body>
+</html>

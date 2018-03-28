@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Contacto | UF HTML</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/favicon.ico">
+    <meta name="descripton" content="Practica final de HTML5">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <!--corrigir    -->
+  <body>
+    <header class="ed-container">
+      <div class="ed-item web-20"><a href="index.html"><img src="img/logo.png"></a></div>
+      <div class="ed-item web-80">
+        <nav>
+          <ul class="ed-menu web-horizontal web-main-end">
+            <li><a href="index.html">inicio</a></li>
+            <li><a href="nosotros.html">nosotros</a></li>
+            <li><a href="servicios.html">servicios</a></li>
+            <li><a href="clientes.html">clientes</a></li>
+            <li><a class="selected" href="contacto.html">contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="ed-container" id="banner">
+      <div class="ed-item"><img src="img/contacto.jpg" alt="contacto">
+      </div>
+    </div>
+    <div class="ed-container">   
+      <main class="ed-item web-75">
+        <h1>Contacto</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis mauris eu dui vulputate lacinia. Vivamus tempor efficitur erat, quis tincidunt libero facilisis non. Quisque sit amet faucibus purus. Vestibulum convallis vitae justo vitae pharetra. Nullam vel ex in diam tincidunt finibus. Cras suscipit dictum eros eget hendrerit. Etiam cursus tempor neque vel interdum. Fusce feugiat sodales dictum. Cras efficitur viverra suscipit. Integer efficitur purus vitae ligula feugiat luctus. Ut tortor orci, aliquet quis leo sit amet, pretium accumsan odio. Vivamus est neque, sollicitudin eu lorem sit amet, eleifend semper massa. Mauris suscipit eleifend urna at accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <form class="ed-container contacto" action="procesar.php">
+          <div class="ed-item web-30">
+            <label for"nombres>Nombre</label>
+          </div>
+          <div class="ed-item web-70">
+            <input id="nombres" name="nombres">
+          </div>
+          <div class="ed-item web-30">
+            <label for"correo>Correo electrónico</label>
+          </div>
+          <div class="ed-item web-70">
+            <input type="email" id="correo" name="correo">
+          </div>
+          <div class="ed-item web-30">
+            <label for"mensaje>Escribe tu mensaje</label>
+          </div>
+          <div class="ed-item web-70">
+            <textarea id="mensaje" name="mensaje" cols="30" rows="10"></textarea>
+          </div>
+          <div class="ed-item">
+            <input class="enviar" type="submit">
+          </div>
+        </form>
+      </main>
+      <aside class="ed-item web-25">
+        <div class="aside-inner">
+          <h2>Sigenos en Facebook</h2>
+          <p>ucibus purus. Vestibulum convallis vitae justo vitae pharetra. Nullam vel ex in diam tincidunt finibus. Cras suscipit dictum eros eget hendrerit. Etiam cursus tempor neque vel interdum. Fusce feugiat sodales dictum. Cras efficitur viverra suscipit. Integer efficitur purus vitae ligula feugiat luctus. Ut tortor orci, ali</p><a href="https://facebook.com" target="_blank">Seguir</a>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <div class="ed-container">
+        <div class="ed-item">
+          <p>Practica HTML</p>
+          <p>Febrero 2018</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

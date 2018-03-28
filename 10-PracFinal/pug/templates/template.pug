@@ -1,0 +1,32 @@
+block config
+    include ../config/variable.pug
+doctype
+html(lang="es")
+    head
+        title #{title} | #{sufijo}
+        meta(charset="utf-8")
+        link(rel="icon" href="img/favicon.ico")
+        meta(name="descripton", content=description)
+        link(rel="stylesheet" href="css/grid.css")
+        link(rel="stylesheet"  href="css/estilos.css")
+    //corrigir    
+    body
+        header.ed-container
+            .ed-item.web-20
+              include ../blocks/logo.pug
+            .ed-item.web-80
+              nav
+                include ../blocks/menu.pug
+        #banner.ed-container
+            .ed-item
+                include ../blocks/banner.pug            
+        .ed-container    
+          main.ed-item.web-75
+            block main
+          aside.ed-item.web-25
+            .aside-inner
+              block aside
+        footer
+            .ed-container
+                .ed-item
+                    include ../blocks/footer.pug

@@ -1,0 +1,119 @@
+pug
+
+Se guia por las tabulaciones.
+
+etiqueta a y atributos sempre entre parentesis y separados por comas
+
+Asignar ids y clases
+pug
+
+id=
+dic#portada
+
+div.mi-clase   el punto gnera toda la instruccion
+
+indentacion:
+	o se utilizan tabs o espacios, es inncesario cerrar la anidacion lo hace automaticamente.
+
+eje: posant sols: DOCTYPE
+	eje:
+	doctype
+			
+
+
+
+prepros:
+
+formato jason el genera al fer drag and drop generant un arxiu al la mateixa adreça que el document txt
+o hi ha la configuracio, que es pot mirar amb notepad
+
+
+
+autocompile- > genera el html auto
+pretty-> genera el html ben tabulat
+comentaris : //
+
+uso de includes para reutilizar plantillas:
+
+	Posar plantilles dins a plantilles
+
+1.- tres fitxers
+
+header.pug
+	nav
+		h1 Titulo menu
+		ul
+			li
+			li
+			li
+	
+desmarquen l'autocompile perque no generi el html
+
+Parciales:
+	
+	home (fitxer variable)
+	
+	footer 
+
+	amb els tres generem el index.pug, el qual volem compilar perque generi el index.html
+
+Crearemos otro pug que incluira los tres parciales 
+
+
+*block y extends
+
+	1.-block [nom] similar a un id de cloque
+	2.-un fitxer utilitzara el id per generar contingut al bloque.
+
+	Serveix de plantilla per a posterior extendre.
+	para que una plantilla s'ha de fer anar la keywords: extends el id ha de ser igual al nom del pug pero sense 
+	la extensio punto.pug
+
+
+eje: (include,block(palabra reservada),extends) main etieuta semantica aside too
+
+	head 
+		tittle Mi primera pagina con extends
+		meta(charset="utf-8")
+
+la plantilla body.pug(parcial) servira para 
+
+		template
+
+head 
+		tittle Mi primera pagina con extends
+		meta(charset="utf-8")
+
+
+		body
+			p Llámenos: 93-456-45-43
+			header
+				block header
+			main
+
+				block main
+			aside
+			
+				block aside
+			footer
+				block footer
+
+doctype
+			html("lang=es")
+			inlucde header
+			nclude body
+
+ahora:
+	tenemos:
+			 template.pug  --> include del header . pug y del body
+				extends
+
+		
+	(ac)index.pug					(ac)promociones.pug
+			y van a generar:
+	index.html					promociones.html
+
+	
+			
+
+

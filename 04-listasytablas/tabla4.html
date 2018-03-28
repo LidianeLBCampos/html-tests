@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas Largas</title>
+    <style>
+        table{
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        
+        td, th{
+            padding: 0 5px;
+            border: 1px solid #eee;
+        }
+        tbody{
+            font-size: 85%;
+        }
+        tbody tr:nth-child(odd){
+            background-color: cornsilk;
+            
+        }
+        tbody tr:hover{
+            background-color: fuchsia;
+            cursor: pointer;
+        }
+        thead, tfoot{
+            background-color: darkolivegreen;
+            color: beige;
+            font-family: sans-serif;
+            font-size: 100%;
+            
+        }
+        tfoot{
+            font-size: 70%;
+            text-align: center;
+        }
+        col{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+   <h1>Tablas Largas</h1>
+    <table>
+         <colgroup>
+               <col>
+           </colgroup>
+        <thead>
+            <tr>
+                <th>Nombre</th><th>Edad</th><th>Población</th>
+            </tr>
+        </thead>
+        <tbody>
+         
+            <tr>
+                <td>juan</td><td>21</td><td>BCN</td>
+            </tr>
+             <tr>
+                <td>juan</td><td>21</td><td>BCN</td>
+            </tr>
+             <tr>
+                <td>juan</td><td>21</td><td>BCN</td>
+            </tr>
+             <tr>
+                <td>juan</td><td>21</td><td>BCN</td>
+            </tr>
+             <tr>
+                <td>juan</td><td>21</td><td>BCN</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="100%">Datos a fecha 31/01/2018</td>
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

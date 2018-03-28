@@ -1,0 +1,27 @@
+extends templates/template
+
+append config
+    -var title = "Contacto"
+    -var paginaActual= "contacto"
+block main
+    h1 Contacto
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis mauris eu dui vulputate lacinia. Vivamus tempor efficitur erat, quis tincidunt libero facilisis non. Quisque sit amet faucibus purus. Vestibulum convallis vitae justo vitae pharetra. Nullam vel ex in diam tincidunt finibus. Cras suscipit dictum eros eget hendrerit. Etiam cursus tempor neque vel interdum. Fusce feugiat sodales dictum. Cras efficitur viverra suscipit. Integer efficitur purus vitae ligula feugiat luctus. Ut tortor orci, aliquet quis leo sit amet, pretium accumsan odio. Vivamus est neque, sollicitudin eu lorem sit amet, eleifend semper massa. Mauris suscipit eleifend urna at accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    form(action="procesar.php").ed-container.contacto
+        .ed-item.web-30
+            label(for"nombres") Nombre
+        .ed-item.web-70
+            input(id="nombres" name="nombres")
+        .ed-item.web-30
+            label(for"correo") Correo electrónico
+        .ed-item.web-70
+            input(type="email", id="correo" name="correo")
+        .ed-item.web-30
+            label(for"mensaje") Escribe tu mensaje
+        .ed-item.web-70
+            textarea(id="mensaje", name="mensaje", cols="30", rows="10")
+        .ed-item
+            input(type="submit").enviar
+block aside
+    h2 Sigenos en Facebook
+    p ucibus purus. Vestibulum convallis vitae justo vitae pharetra. Nullam vel ex in diam tincidunt finibus. Cras suscipit dictum eros eget hendrerit. Etiam cursus tempor neque vel interdum. Fusce feugiat sodales dictum. Cras efficitur viverra suscipit. Integer efficitur purus vitae ligula feugiat luctus. Ut tortor orci, ali
+    a(href="https://facebook.com", target="_blank") Seguir

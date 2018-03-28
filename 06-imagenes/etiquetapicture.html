@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Etiqueta picture</title>
+    <style>
+        img{
+            max-width: 100%;
+        }    
+    </style>
+</head>
+<body>
+   <h1>Las etiquetas <em>picture</em></h1>
+   <h2>Redimensionae el navegador para ver cómo cambia la imagen</h2>
+   <picture>
+       <source srcset="images/mujer-small.jpg" media="(min-width:1000px)">
+       <img src="images/mujer-small.jpg" alt="mujer">
+       <source srcset="images/juguete.jpg" media="(min-width:600px)">
+       <img src="images/juguete.jpg" alt="juguete">
+      <img src="images/balon.jpg" alt="balom">
+   </picture>
+    
+</body>
+</html>
